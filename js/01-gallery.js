@@ -38,11 +38,9 @@ function replacementLinkImg(event) {
     
   // ссылка на оригинал картинки
     
-    const currentImageUrl = event.target.dataset.source;
-    
-  // вызов функции открытия модального окна
-    
-  onOpenModal(currentImageUrl);
+    const currentImageUrl = event.target.dataset.source; 
+  // вызов функции открытия модального окна 
+    onOpenModal(currentImageUrl);
 }
 
 // функция открытия модального окна basicLightbox
