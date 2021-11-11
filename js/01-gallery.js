@@ -48,10 +48,15 @@ function replacementLinkImg(event) {
 // функция открытия модального окна basicLightbox
 
 function onOpenModal(currentImageUrl) {
-  const createModal = basicLightbox.create(`<img
+  const createModal = basicLightbox.create(
+    `
+      <img
       class="modal__image"
-      src="${currentImageUrl}"/>`);
-    createModal.show();
+      src="${currentImageUrl}"
+          />
+`
+  );
+  createModal.show();
     
   // вкл слушателя
   window.addEventListener("keydown", escKeyCloseModal);
